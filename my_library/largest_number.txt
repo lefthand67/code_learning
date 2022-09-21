@@ -1,0 +1,10 @@
+# Finding the largest number in a row
+
+numbers = [45, 75, 2, -2, 3, 94, 5, 34]
+# We're going to compare each number with the initially "largest" (i.e. first) number 
+# and change the value if the next number is bigger 
+largest_number = numbers[0]
+for i in numbers:
+    if i > largest_number:
+        largest_number = i
+print(largest_number)

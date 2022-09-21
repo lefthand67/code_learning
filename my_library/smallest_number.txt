@@ -1,0 +1,33 @@
+# Finding the smallest number in a row (in my_library)
+
+numbers = [45, 75, 2, -2, 3, 94, 5, 34]
+smallest_number = numbers[0]
+for i in numbers:
+    if i < smallest_number:
+        smallest_number = i
+print(smallest_number)
+
+
+# Counting all the steps
+
+count = 0
+smallest_number = numbers[0]
+print('Before:', smallest_number)
+for i in numbers:
+    count = count + 1
+    if i < smallest_number:
+        smallest_number = i
+    print(str(count) + ')', i, smallest_number)
+print('After: the smallest number is', smallest_number)
+
+# Another (tricky) way (from py4e)
+
+smallest_number = None
+print('Before:', smallest_number)
+for i in numbers:
+    if smallest_number is None:
+        smallest_number = i
+    elif i < smallest_number:
+        smallest_number = i
+    print(i, smallest_number)
+print('After: the smallest number is', smallest_number)
