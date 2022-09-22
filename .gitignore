@@ -1,5 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows
+# Edited by V. Rudakov
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -26,5 +27,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Jupyter temp folders
+.ipynb_checkpoints
 
 # End of https://www.toptal.com/developers/gitignore/api/windows

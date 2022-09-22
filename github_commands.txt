@@ -1,3 +1,10 @@
+cd /C/Users/Commi/YandexDisk/code_learning
+
+git status
+git add . 
+git commit -m 'updated files'
+git push
+
 …create a new repository on the command line
 echo "# code_learning" >> README.md
 git init
