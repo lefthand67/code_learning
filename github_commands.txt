@@ -1,3 +1,8 @@
+prompt 
+c:\users\commi\yandexdisk\code_learning
+
+github
+
 cd /C/Users/Commi/YandexDisk/code_learning
 
 git status
