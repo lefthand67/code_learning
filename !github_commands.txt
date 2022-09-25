@@ -1,5 +1,5 @@
 prompt 
-c:\users\commi\yandexdisk\code_learning
+cd c:\users\commi\yandexdisk\code_learning
 
 github
 
@@ -7,7 +7,7 @@ cd /C/Users/Commi/YandexDisk/code_learning
 
 git status
 git add . 
-git commit -m 'updated files'
+git commit -m "updated files"
 git push
 
 …create a new repository on the command line
