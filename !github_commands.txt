@@ -3,6 +3,8 @@ cd c:\users\commi\yandexdisk\code_learning
 
 github
 
+hello
+
 cd /C/Users/Commi/YandexDisk/code_learning
 
 git status
