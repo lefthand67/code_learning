@@ -1,0 +1,37 @@
+# Advanced script for extracting the host names from the emails in a mailbox doc (VR)
+
+fhand = open('mbox-short.txt')
+
+line_number = 0   # number of the line in the doc
+count = 0         # number of the line with '@'
+long_list = []    # list of all host names in the lines with '@'
+host_list = []    # list of the unique host names exctracted from the long_list
+host_count = {}   # frequence of the host names in the long_list 
+
+# First we need to find the '@' and ' ' poistions to extract the host names between them.
+for line in fhand:
+    line_number = line_number + 1
+    if '@' not in line:                 # we skip lines without '@'
+        continue
+    elif '@' in line:
+        atpos = line.find('@')          # finding the '@' poistion
+        sppos = line.find(' ', atpos)   # finding the ' ' poistion
+        host = line[atpos+1 : sppos]    # extracting the host name
+        host = host.rstrip('>')         # clening the host name out of the additional symbols
+        host = host.rstrip('>;')
+        host = host.rstrip(';')
+        host = host.rstrip(')')
+        count = count + 1
+        long_list.append(host)          # appending the found host names into the long_list
+        if host not in host_list:       # appending the unique host names in the host_list
+            host_list.append(host)        
+#         print('Line', str(line_number) + ':', host)
+
+print('@hostnames found in:', count, 'lines of', line_number)
+print('\nHOST LIST of', len(host_list), 'host(s):\n', host_list)
+        
+for name in long_list:                  # counting the frequence of the extracted host names
+    host_count[name] = host_count.get(name, 0) + 1
+            
+print('\nFREQUENCE of the host names:\n', host_count)
+# print(long_list)
