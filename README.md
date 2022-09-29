@@ -1,1 +1,1 @@
-# the folder consists of the temporary files I use as the drafts for code learning practice
+### The folder consists of the learning and temporary files I use as the drafts for code learning practice
