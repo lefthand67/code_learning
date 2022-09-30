@@ -25,12 +25,13 @@ for line in fhand:
         long_list.append(host)          # appending the found host names into the long_list
         if host not in host_list:       # appending the unique host names in the host_list
             host_list.append(host)        
-#         print('Line', str(line_number) + ':', host)
+#         print('Line {}: {}'.format(line_number, host))
 
-print('@hostnames found in:', count, 'lines of', line_number)
-print('\nHOST LIST of', len(host_list), 'host(s):\n', host_list)
-        
-for name in long_list:                  # counting the frequence of the extracted host names
+print('@hostnames found in: {} lines of {}'.format(count, line_number))
+print('\nHOST LIST of {} host(s):\n {}'.format(len(host_list), host_list))
+
+# Second, we count the frequence of the previously extracted host names.
+for name in long_list:
     host_count[name] = host_count.get(name, 0) + 1
             
 print('\nFREQUENCE of the host names:\n', host_count)
