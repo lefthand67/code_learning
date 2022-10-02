@@ -1,6 +1,6 @@
-# Advanced script for extracting the host names from the emails in a mailbox doc (VR)
+# Extracting the host names from the emails in a mailbox doc (VR)
 
-fhand = open('mbox-short.txt')
+fhand = open('_mbox-short.txt')
 
 line_number = 0   # number of the line in the doc
 count = 0         # number of the line with '@'
