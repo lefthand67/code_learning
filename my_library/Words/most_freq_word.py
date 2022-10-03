@@ -14,10 +14,10 @@ def most_freq_word():
     NOTE! You can reassign the default file in prompt by activating the line above the function code
     and deactivating the first line of the function.
     
-    >>> Output example:
+    Output example:
     
     Enter the file name (press Enter to open the default file): 
-    Opened by default: mbox-short.txt
+    Opened by default: _mbox-short.txt
 
     Largest count: 352
     jan
@@ -75,5 +75,4 @@ def most_freq_word():
         if (count == largest_count) and (word not in freq_words):
             freq_words.append(word)
             # print(word)
-    return '\nQuantity of words: {}\nMost frequent words: {}'.format(len(freq_words), freq_words)
-
+    return '\nQuantity of words: {}\nMost frequent words: {}.\nDone'.format(len(freq_words), freq_words)

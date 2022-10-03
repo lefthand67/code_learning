@@ -11,14 +11,13 @@ def word_count():
     NOTE! You can reassign the default file in prompt by activating the line above the function code
     and deactivating the first line of the function.
     
-    >>> Output example:
+    Output example:
     
-    Enter the file name (press Enter to open the default file): 
-    Opened by default: mbox-short.txt
+    Enter the file name (press Enter to open the default file):
+    Opened by default: _mbox-short.txt
 
     Length: 1063
     Counts: {'from': 326, 'stephen.marquard@uct.ac.za': 8, 'sat': 12, 'jan': 352, '09:14:16': 4, 'return-path': 27}
-    
     """
 
     dfile = '_mbox-short.txt'  # a file that be opened by default (Enter button), deactivate when using as script
@@ -53,4 +52,4 @@ def word_count():
             except ValueError:  # we get only non-ints and non-floats in counts list
                 if len(word) > 0:
                     counts[word] = counts.get(word, 0) + 1
-    return '\nThe number of words: {}\nCounts:\n{}'.format(len(counts), counts)
+    return '\nThe number of words: {}\nCounts:\n{}.\nDone'.format(len(counts), counts)
