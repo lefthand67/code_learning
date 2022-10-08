@@ -1,42 +1,21 @@
-# Программа "Сортировка по ведрам"
+# 3. Поиск ближайших одинаковых чисел в массиве
 
-arr = [11, 9, 21, 8, 17, 19, 13, 1, 24, 12]
-arr_sorted = []
+lst = [1, 2, 3, 4, 2, 1, 2]
+min_x = None
 
-maximum = max(arr)
-minimum = min(arr)
+i = 0
+while i < len(lst) - 1:
+    a = lst[i]
+#     print(i, a)
+    j = i + 1
+    while j < len(lst):
+        b = lst[j]
+        if a == b:
+            x = abs(i - j)
+            print('i={0} j={1}: x={2}'.format(i, j, x))
+            if min_x is None or min_x > x:
+                min_x = x
+    i += 1
 
-if len(arr) % 2 != 0:
-    bucket_count = round(len(arr)/2)
-else:
-    bucket_count = len(arr)/2
-step = (maximum - minimum) / bucket_count
-bucket_arr = []
-
-print("Начальный массив:")
-print(arr)
-
-
-for i in range(int(bucket_count)):
-    bucket_arr.append([])
-print("\nПустые корзины:")
-print(bucket_arr)
-
-for i in range(len(bucket_arr)):
-    for j in range(len(arr)):
-        if (arr[j] < int(step*i + step)) and (arr[j] >= int(step*i)):
-            bucket_arr[i].append(arr[j])
-print("Заполненные корзины:")
-print(bucket_arr)
-
-for i in range(len(bucket_arr)):
-    bucket_arr[i].sort()
-print("Отсортированные корзины:")
-print(bucket_arr)
-
-for i in range(len(bucket_arr)):
-    for j in range(len(bucket_arr[i])):
-        arr_sorted.append(bucket_arr[i][j])
-
-print("\nКонечный массив")
-print(arr_sorted)
+print('Minimum:', min_x)
+print('Done')
