@@ -30,3 +30,4 @@ $RECYCLE.BIN/
 # Jupyter temp folders
 /.ipynb_checkpoints
 /__pycache__
+/.idea
