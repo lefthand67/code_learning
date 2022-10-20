@@ -9,7 +9,8 @@ cd /C/Users/Commi/YandexDisk/code_learning
 
 git status
 git add . 
-git commit -m "updated files"
+git commit -a -m "updated files"
+git log --decorate --graph --all
 git push
 
 …create a new repository on the command line
