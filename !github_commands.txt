@@ -9,7 +9,7 @@ cd /C/Users/Commi/YandexDisk/code_learning
 
 git status
 git add . 
-git commit -a -m "updated files"
+git commit -m "updated files"
 git log --decorate --graph --all (q to exit)
 git push
 
