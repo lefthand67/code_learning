@@ -1,11 +1,11 @@
-prompt 
+﻿prompt 
 cd c:\users\commi\yandexdisk\code_learning
 
 github
 
 hello
 
-cd /C/Users/Commi/YandexDisk/code_learning
+cd C:/Users/commi/code_learning
 
 git status
 git add . 
@@ -26,3 +26,14 @@ git push -u origin main
 git remote add origin https://github.com/lefthand67/code_learning.git
 git branch -M main
 git push -u origin main
+
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
