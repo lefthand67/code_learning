@@ -1,11 +1,10 @@
 # Strong password generator
 def password_gen(number_of_symbols):
-    '''
+    """
     The program generates strong passwords of any size starting from 12 symbols.
-    If the number is less than four (the number of required symbol types) the programm will not 
+    If the number is less than four (the number of required symbol types) the program will not
     be able to generate a password.
-    Created by V. Rudakov
-    '''
+    """
     
     # required symbols
     numbers = '1234567890'
@@ -49,3 +48,4 @@ def password_gen(number_of_symbols):
         else:
             print('Your password:')
             print(password)
+
