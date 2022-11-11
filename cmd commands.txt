@@ -1,0 +1,17 @@
+﻿cd Path
+cd .. 		# get one folder up
+
+python.exe -m pip install --upgrade pip
+
+**Jupyter Lab**
+
+python.exe -m pip install jupyterlab	# to install
+jupyter-lab  				# to open
+pip uninstall jupyterlab		# to uninstall
+https://jupyter.org/install
+
+**NumPy**
+
+python.exe -m pip install numpy
+python.exe -m pip install --upgrade numpy
+
