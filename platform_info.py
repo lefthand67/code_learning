@@ -1,6 +1,10 @@
 import platform
 import numpy as np
+import matplotlib
+import pandas as pd
 
-print(platform.machine())
-print(platform.python_version())
-print(np.version.version)
+print('Machine:', platform.machine())
+print('Python:', platform.python_version())
+print('pandas:', pd.__version__)
+print('numpy:', np.version.version)
+print('matplotlib:', matplotlib.__version__)

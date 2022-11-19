@@ -1,0 +1,21 @@
+python.exe -m pip install --upgrade pip
+python.exe -m pip install jupyterlab
+python.exe -m pip install pandas
+python.exe -m pip install scikit-learn
+python.exe -m pip install scipy
+python.exe -m pip install numpy
+python.exe -m pip install matplotlib
+python.exe -m pip install beautifulsoup4
+print('Done buddy')
+
+
+
+python -m pip install --upgrade pip
+python -m pip install jupyterlab
+python -m pip install pandas
+python -m pip install scikit-learn
+python -m pip install scipy
+python -m pip install numpy
+python -m pip install matplotlib
+python -m pip install beautifulsoup4
+print('Done buddy')
