@@ -1,16 +1,47 @@
 ﻿cd Path
 cd .. 		# get one folder up
 
-python.exe -m pip install --upgrade pip
+python -m pip install --upgrade pip
 
 **Jupyter Lab**
 
-python.exe -m pip install jupyterlab	# to install
+python -m pip install jupyterlab	# to install
 jupyter-lab  				# to open
 pip uninstall jupyterlab		# to uninstall
 https://jupyter.org/install
 
+VSCode theme
+python -m pip install jupyterlab>=3.0.0,<4.0.0a0 jupyterlab-lsp
+python -m pip install python-lsp-server[all]
+https://github.com/jupyter-lsp/jupyterlab-lsp
+
 **NumPy**
+cd Path
+cd .. 		# get one folder up
+
+python -m pip install --upgrade pip
+
+**Jupyter Lab**
+
+python -m pip install jupyterlab	# to install
+jupyter-lab  				# to open
+pip uninstall jupyterlab		# to uninstall
+https://jupyter.org/install
+
+jupyterlab-theme-solarized-dark
+python -m pip install jupyterlab_theme_solarized_dark
+https://github.com/AllanChain/jupyterlab-theme-solarized-dark
+
+VSCode theme
+python -m pip install jupyterlab>=3.0.0,<4.0.0a0 jupyterlab-lsp
+python -m pip install python-lsp-server[all]
+https://github.com/jupyter-lsp/jupyterlab-lsp
+
+**NumPy**
+
+python.exe -m pip install numpy
+python.exe -m pip install --upgrade numpy
+
 
 python.exe -m pip install numpy
 python.exe -m pip install --upgrade numpy
