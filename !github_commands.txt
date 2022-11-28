@@ -5,7 +5,7 @@ github
 
 hello
 
-cd C:/Users/commi/code_learning
+cd C:/Users/commi/yandexdisk/code_learning
 
 git status
 git add . 
