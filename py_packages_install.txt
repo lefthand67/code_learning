@@ -1,15 +1,4 @@
-python.exe -m pip install --upgrade pip
-python.exe -m pip install jupyterlab
-python.exe -m pip install pandas
-python.exe -m pip install scikit-learn
-python.exe -m pip install scipy
-python.exe -m pip install numpy
-python.exe -m pip install matplotlib
-python.exe -m pip install beautifulsoup4
-print('Done buddy')
-
-
-
+**Isntalling**
 python -m pip install --upgrade pip
 python -m pip install jupyterlab
 python -m pip install pandas
@@ -17,5 +6,29 @@ python -m pip install scikit-learn
 python -m pip install scipy
 python -m pip install numpy
 python -m pip install matplotlib
+python -m pip install seaborn
+python -m pip install sympy
 python -m pip install beautifulsoup4
-print('Done buddy')
+
+**Updating**
+python -m pip install --upgrade pip
+python -m pip install --upgrade jupyterlab
+python -m pip install --upgrade pandas
+python -m pip install --upgrade scikit-learn
+python -m pip install --upgrade scipy
+python -m pip install --upgrade numpy
+python -m pip install --upgrade matplotlib
+python -m pip install --upgrade seaborn
+python -m pip install --upgrade sympy
+python -m pip install --upgrade beautifulsoup4
+
+python -m pip install --upgrade pip
+python -m pip install --user --upgrade jupyterlab
+python -m pip install --user --upgrade pandas
+python -m pip install --user --upgrade scikit-learn
+python -m pip install --user --upgrade scipy
+python -m pip install --user --upgrade numpy
+python -m pip install --user --upgrade matplotlib
+python -m pip install --user --upgrade seaborn
+python -m pip install --user --upgrade sympy
+python -m pip install --user --upgrade beautifulsoup4
