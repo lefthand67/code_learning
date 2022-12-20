@@ -1,0 +1,29 @@
+C:\Users\commi>cd ..\..
+
+C:\>cd Python\venv
+
+
+# venv creation
+
+C:\Python\venv>c:\Python\Python3.9\python -m venv venv39
+C:\Python\venv>venv39\Scripts\activate
+
+(venv39) C:\Python\venv>python
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+
+
+# JupyterNB kernel creation
+# Установить jupyterlab в данной venv, затем создать pykernel, после чего
+# декативироваться и запустить jupyterlab из обычной директории
+
+(venv39) C:\Python\venv>pip install jupyterlab
+(venv39) C:\Python\venv>python -m ipykernel install --name=venv39
+(venv39) C:\Python\venv>deactivate
+C:\Python\venv>cd ..\..
+
+https://vc.ru/newtechaudit/416183-python-venv-i-jupyter-ipykernel-dlya-samyh-zelenyh
+https://janakiev.com/blog/jupyter-virtual-envs/#add-virtual-environment-to-jupyter-notebook
+
+
+(venv39) C:\Python\venv>pip freeze  # checking for libraries

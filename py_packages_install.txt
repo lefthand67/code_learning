@@ -2,6 +2,7 @@
 python -m pip install --upgrade pip
 python -m pip install jupyterlab
 python -m pip install pandas
+python -m pip install pandas-profiling
 python -m pip install scikit-learn
 python -m pip install scipy
 python -m pip install numpy
@@ -9,11 +10,13 @@ python -m pip install matplotlib
 python -m pip install seaborn
 python -m pip install sympy
 python -m pip install beautifulsoup4
+python -m pip install pandas-profiling
 
 **Updating**
 python -m pip install --upgrade pip
 python -m pip install --upgrade jupyterlab
 python -m pip install --upgrade pandas
+python -m pip install --upgrade pandas-profiling
 python -m pip install --upgrade scikit-learn
 python -m pip install --upgrade scipy
 python -m pip install --upgrade numpy
@@ -25,6 +28,7 @@ python -m pip install --upgrade beautifulsoup4
 python -m pip install --upgrade pip
 python -m pip install --user --upgrade jupyterlab
 python -m pip install --user --upgrade pandas
+python -m pip install --user --upgrade pandas-profiling
 python -m pip install --user --upgrade scikit-learn
 python -m pip install --user --upgrade scipy
 python -m pip install --user --upgrade numpy
