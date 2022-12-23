@@ -11,9 +11,11 @@ pip uninstall jupyterlab		# to uninstall
 https://jupyter.org/install
 
 VSCode theme
-python -m pip install jupyterlab>=3.0.0,<4.0.0a0 jupyterlab-lsp
+python -m pip install jupyterlab-lsp
 python -m pip install python-lsp-server[all]
 https://github.com/jupyter-lsp/jupyterlab-lsp
+
+python -m pip install jupyterlab_theme_solarized_dark
 
 **NumPy**
 cd Path

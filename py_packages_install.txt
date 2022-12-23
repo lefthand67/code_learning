@@ -1,6 +1,7 @@
 **Isntalling**
 python -m pip install --upgrade pip
 python -m pip install jupyterlab
+python -m pip install jupyterlab_theme_solarized_dark
 python -m pip install pandas
 python -m pip install pandas-profiling
 python -m pip install scikit-learn
